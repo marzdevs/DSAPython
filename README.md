@@ -1,3 +1,2 @@
-# DSAPython
+# DSA in Python worked out exercises
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-aisnqu)
