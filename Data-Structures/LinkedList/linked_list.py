@@ -1,9 +1,11 @@
+# Node class that represents an individual element in linked list
+# two class memebers, data, next: pointer to next element
 class Node:
     # two class members
     def __init__(self, data=None, next=None):
         self.data = data
         self.next = next
-
+# head variable that points to the head of linked list
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -53,9 +55,11 @@ class LinkedList:
             self.insert_at_begining(data)
             return
 
+        #
         count = 0
         itr = self.head
         while itr:
+            # at the element prior to the element u want to insert at
             if count == index - 1:
                 node = Node(data, itr.next)
                 itr.next = node
@@ -72,6 +76,7 @@ class LinkedList:
             self.head = self.head.next
             return
 
+        # iterates through and skips the index making the count = index - 1 point to the next.next element
         count = 0
         itr = self.head
         while itr:
